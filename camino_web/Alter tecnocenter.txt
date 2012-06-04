@@ -1,0 +1,23 @@
+ALTER TABLE  `providers` CHANGE  `notas_proveedor`  `notas_proveedor` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL
+ALTER TABLE  `inventory_movements` CHANGE  `detalle`  `detalle` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL
+-- ALTER NELSON
+ALTER TABLE `online_sales` CHANGE `nit_cliente` `user_id` INT( 15 ) NOT NULL 
+ALTER TABLE `online_sales` CHANGE `cod_producto` `product_id` INT( 10 ) NOT NULL 
+
+-- ONLINE SALES - PRODUCTS
+ALTER TABLE `tecnocenter`.`online_sales` 
+  ADD CONSTRAINT `online_sales_product`
+  FOREIGN KEY (`product_id` )
+  REFERENCES `tecnocenter`.`products` (`id` )
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+, ADD INDEX `online_sales_product` (`product_id` ASC) ;
+
+-- ONLINE SALES - USERS
+ALTER TABLE `tecnocenter`.`online_sales` 
+  ADD CONSTRAINT `online_sales_user`
+  FOREIGN KEY (`user_id` )
+  REFERENCES `tecnocenter`.`users` (`id` )
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+, ADD INDEX `online_sales_user` (`user_id` ASC) ;

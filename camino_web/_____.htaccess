@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteRule ^archivo1.html$ archivo2.html  
+RewriteRule    ^$    app/webroot/    [L]
+RewriteRule    (.*) app/webroot/$1    [L]

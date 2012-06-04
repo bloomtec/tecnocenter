@@ -1,0 +1,2 @@
+tooltip #21AEDD   opacidad:80%
+borde 2 px color borde #CCCCCC

@@ -36,8 +36,8 @@ namespace :deploy do
     run "chmod 666 /home/embalao/tecnocenter.bloomweb.co/app/config/database.php"
     run "cp /home/embalao/tecnocenter.bloomweb.co/app/config/database.php.srvr /home/embalao/tecnocenter.bloomweb.co/app/config/database.php"
     run "chmod 777 /home/embalao/tecnocenter.bloomweb.co/app/tmp/ -R"
-    run "chmod 777 /home/embalao/tecnocenter.bloomweb.co/app/webroot/img/uploads/ -R"
-    run "chmod 777 /home/embalao/tecnocenter.bloomweb.co/app/webroot/files/uploads/ -R"
+    run "chmod 777 /home/embalao/tecnocenter.bloomweb.co/app/webroot/img/ -R"
+    run "chmod 777 /home/embalao/tecnocenter.bloomweb.co/app/webroot/files/ -R"
   end
   
 end

@@ -77,20 +77,18 @@ class DATABASE_CONFIG {
 		'driver' => 'mysql',
 		'persistent' => false,
 		
-
-                'host' => 'localhost',
+		/**
+		'host' => 'localhost',
 		'login' => 'tecnocen_diego',
 		'password' => 'w&BzKKwUT68l',
-		/* 'database' => 'tecnocen_tecnocenter', */
-		'database' => 'tecnocen_tecnocenter1', 		
-		/*
-		'host' => 'mysql.embalao.org',
-		'login' => 'prueba23',
-		'password' => 'prueba23',
-		'database' => 'tecnocenter',
-		*/
-
-
+		'database' => 'tecnocen_tecnocenter1',
+		 */ 		
+		
+		'host' => 'mysql.bloomweb.org',
+		'login' => 'bloomweb',
+		'password' => 'rr40r900343',
+		'database' => 'bloomweb_tecnocenter',
+		
 		'prefix' => '',
 	);
 

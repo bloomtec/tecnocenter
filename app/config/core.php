@@ -35,7 +35,7 @@
  */
  	Configure::write('userId', "69237");
 	Configure::write('llaveEncripcion', "12ebb235294");
-	Configure::write('debug', 0);
+	Configure::write('debug', 1);
 
 /**
  * CakePHP Log Level:

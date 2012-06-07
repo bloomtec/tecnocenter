@@ -84,7 +84,7 @@ class DATABASE_CONFIG {
 		'database' => 'tecnocen_tecnocenter1',
 		 */ 		
 		
-		'host' => 'mysql.bloomweb.org',
+		'host' => 'mysql.bloomweb.co',
 		'login' => 'bloomweb',
 		'password' => 'rr40r900343',
 		'database' => 'bloomweb_tecnocenter',
